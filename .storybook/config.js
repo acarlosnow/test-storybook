@@ -1,10 +1,10 @@
 import { configure, addDecorator } from '@storybook/angular';
-import '!style-loader!css-loader!sass-loader!../src/styles.scss';
 import { withNotes } from '@storybook/addon-notes';
 import { withOptions } from '@storybook/addon-options';
 import { centered } from '@storybook/addon-centered/angular';
 import { checkA11y } from '@storybook/addon-a11y';
-import { themes } from '@storybook/components';
+
+import '!style-loader!css-loader!sass-loader!../src/styles.scss';
 
 addDecorator(withNotes);
 addDecorator(centered);
@@ -18,8 +18,7 @@ addDecorator(
 );
 
 function loadStories() {
-  require('../src/stories/index');
+  require('./stories/index');
 }
-
 
 configure(loadStories, module);

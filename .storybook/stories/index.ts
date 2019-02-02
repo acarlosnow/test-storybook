@@ -1,7 +1,7 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import { action } from '@storybook/addon-actions';
-import { boolean, number, text, withKnobs } from '@storybook/addon-knobs';
-import { SomeDirective } from '../app/my-button/my-button.component';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
+import { SomeDirective } from '../../src/app/my-button/my-button.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 
 const decorator = moduleMetadata({
