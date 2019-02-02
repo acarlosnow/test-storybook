@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+* This file overrides the default variables of bootstrap 4
+**/
+// DC color scheme
+$color-dc: #2E91D8;
+$color-dc-dark: #2c3e50;
+$color-dc-dark-2: #243341;
+$color-dc-light: #f1f5f7;
+
+$color-danger: #d9534f;
+$color-warning: #FF9C00;
+$color-success: #30a221;
+$color-primary: $color-dc;
+$color-secondary: #636c72;
+
+// todo(allan): Remove below colors
+// too many colors that are rarely used maybe just put it where it is used
+$color-white: #ffffff;
+$color-blue: #1c93d4;
+$color-green: #30a221;
+$color-yellow: #f6af48;
+$color-gray: #8d8d8d;
+$color-orange: #fd7e14;
+$color-pink: #e83e8c;
+$color-purple: #6f42c1;
+$color-teal: #20c997;
+$color-cyan: #00d5ec;
+$color-black: #212529;
+
+// custom defined secondary colors
+$color-light-gray: #ebebeb;
+$color-lighter-gray: #f1f5f7;
+$color-light-blue: #e7f2fa;
+
+
+$theme-colors: (
+    primary: $color-dc,
+    success: $color-success,
+    danger: $color-danger,
+    warning: $color-warning
+);
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-size-base: 0.80rem;
+$grid-gutter-width: 20px;
+
+
+$accent: $color-dc;
+$secondary: #e4e7eb;
+$info: #17a2b8;
+$success: #28a745;
+$warning: #ffc107;
+$error: #dc3545;
+$body-bg: #eaeef2;
+$body-color: #292b2c;
+$component-bg: #ffffff;
+$component-color: #292b2c;
+$card-cap-bg: #f7f7f9;
+$card-cap-color: #292b2c;
+$series-a: #0275d8;
+$series-b: #5bc0de;
+$series-c: #5cb85c;
+$series-d: #f0ad4e;
+$series-e: #e67d4a;
+$series-f: #d9534f;
+
+$border-radius: 0;
+
+
+@import "~bootstrap/scss/bootstrap";
+@import "~@progress/kendo-theme-bootstrap/scss/all";
+
+.k-button.small {
+  font-size: 85% !important;
+}
